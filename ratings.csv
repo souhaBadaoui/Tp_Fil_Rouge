@@ -1,0 +1,184 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>The Movies Dataset | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="Metadata on over 45,000 movies. 26 million ratings from over 270,000 users." />
+    <meta name="keywords" content="earth and nature,movies and tv shows,popular culture" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="76t2raip2TNrdoSMQn5gcQ==" type="text/javascript">
+    window["pageRequestStartTime"] = 1743719912421;
+    window["pageRequestEndTime"] = 1743719912521;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <script nonce="76t2raip2TNrdoSMQn5gcQ==" id="gsi-client" src="https://accounts.google.com/gsi/client" async defer></script>
+  <script nonce="76t2raip2TNrdoSMQn5gcQ==">window.KAGGLE_JUPYTERLAB_PATH = "/static/assets/jupyterlab-v4/jupyterlab-index-41ad0d0777cb68aebe78.html";</script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+    <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" id="dynamic-favicon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="76t2raip2TNrdoSMQn5gcQ==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+
+    <link rel="canonical" href="https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=2d4e7ec4eb689d926191" />
+
+  
+    
+ 
+      <script nonce="76t2raip2TNrdoSMQn5gcQ==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="76t2raip2TNrdoSMQn5gcQ==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T7QHS60L4Q', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets'
+        });
+    </script>
+    <script nonce="76t2raip2TNrdoSMQn5gcQ==" async src="https://www.googletagmanager.com/gtag/js?id=G-T7QHS60L4Q"></script>
+
+  
+    
+    <meta property="og:url" content="https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset" />
+    <meta property="og:title" content="The Movies Dataset" />
+    <meta property="og:description" content="Metadata on over 45,000 movies. 26 million ratings from over 270,000 users." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/3405/5520/155700dd4800b6486f19dcab0e0b0cb8/dataset-card.jpg" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+        <meta name="twitter:creator" content="@Rounak_Banik" />
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+            <script nonce="76t2raip2TNrdoSMQn5gcQ==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"The Movies Dataset","description":"### Context\n\nThese files contain metadata for all 45,000 movies listed in the Full MovieLens Dataset. The dataset consists of movies released on or before July 2017. Data points include cast, crew, plot keywords, budget, revenue, posters, release dates, languages, production companies, countries, TMDB vote counts and vote averages.\n\nThis dataset also has files containing 26 million ratings from 270,000 users for all 45,000 movies. Ratings are on a scale of 1-5 and have been obtained from the official GroupLens website.\n\n\n### Content\n\nThis dataset consists of the following files:\n\n**movies_metadata.csv:** The main Movies Metadata file. Contains information on 45,000 movies featured in the Full MovieLens dataset. Features include posters, backdrops, budget, revenue, release dates, languages, production countries and companies.\n\n**keywords.csv:** Contains the movie plot keywords for our MovieLens movies. Available in the form of a stringified JSON Object.\n\n**credits.csv:** Consists of Cast and Crew Information for all our movies. Available in the form of a stringified JSON Object.\n\n**links.csv:** The file that contains the TMDB and IMDB IDs of all the movies featured in the Full MovieLens dataset.\n\n**links_small.csv:** Contains the TMDB and IMDB IDs of a small subset of 9,000 movies of the Full Dataset.\n\n**ratings_small.csv:** The subset of 100,000 ratings from 700 users on 9,000 movies.\n\nThe Full MovieLens Dataset consisting of 26 million ratings and 750,000 tag applications from 270,000 users on all the 45,000 movies in this dataset can be accessed [here](https://grouplens.org/datasets/movielens/latest/) \n\n### Acknowledgements\n\nThis dataset is an ensemble of data collected from TMDB and GroupLens.\nThe Movie Details, Credits and Keywords have been collected from the TMDB Open API. This product uses the TMDb API but is not endorsed or certified by TMDb. Their API also provides access to data on many additional movies, actors and actresses, crew members, and TV shows. You can try it for yourself [here](https://www.themoviedb.org/documentation/api).\n\nThe Movie Links and Ratings have been obtained from the Official GroupLens website. The files are a part of the dataset available [here](https://grouplens.org/datasets/movielens/latest/)\n\n![](https://www.themoviedb.org/assets/static_cache/9b3f9c24d9fd5f297ae433eb33d93514/images/v4/logos/408x161-powered-by-rectangle-green.png)\n\n\n### Inspiration\n\nThis dataset was assembled as part of my second Capstone Project for Springboard's [Data Science Career Track](https://www.springboard.com/workshops/data-science-career-track). I wanted to perform an extensive EDA on Movie Data to narrate the history and the story of Cinema and use this metadata in combination with MovieLens ratings to build various types of Recommender Systems.\n\nBoth my notebooks are available as kernels with this dataset: [The Story of Film](https://www.kaggle.com/rounakbanik/the-story-of-film) and  [Movie Recommender Systems](https://www.kaggle.com/rounakbanik/movie-recommender-systems)\n\nSome of the things you can do with this dataset:\nPredicting movie revenue and/or movie success based on a certain metric. What movies tend to get higher vote counts and vote averages on TMDB? Building Content Based and Collaborative Filtering Based Recommendation Engines.\n","url":"https://www.kaggle.com/rounakbanik/the-movies-dataset","version":7,"keywords":["subject, earth and nature","subject, arts and entertainment, movies and tv shows","subject, culture and humanities, popular culture"],"license":{"@type":"CreativeWork","name":"CC0: Public Domain","url":"https://creativecommons.org/publicdomain/zero/1.0/"},"identifier":["3405"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"Rounak Banik","url":"https://www.kaggle.com/rounakbanik","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/927562-kg.jpg"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset/download?datasetVersionNumber=7","contentSize":"238862293 bytes"}],"commentCount":41,"dateModified":"2017-11-10T02:40:38.583Z","discussionUrl":"https://www.kaggle.com/rounakbanik/the-movies-dataset/discussion","alternateName":"Metadata on over 45,000 movies. 26 million ratings from over 270,000 users.","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/3405/5520/155700dd4800b6486f19dcab0e0b0cb8/dataset-card.jpg","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":41},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":396857},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":1947201},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":3717}]}</script>
+        
+
+  
+    
+
+  
+    
+
+
+    <script nonce="76t2raip2TNrdoSMQn5gcQ==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="76t2raip2TNrdoSMQn5gcQ==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="76t2raip2TNrdoSMQn5gcQ==" src="/static/assets/runtime.js?v=65e25d68eb562b179c3e"></script>
+  <script nonce="76t2raip2TNrdoSMQn5gcQ==" src="/static/assets/vendor.js?v=a62013a985d655b5d6e4"></script>
+  <script nonce="76t2raip2TNrdoSMQn5gcQ==" src="/static/assets/app.js?v=6348f7497c4c5850209b"></script>
+    <script nonce="76t2raip2TNrdoSMQn5gcQ==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+<body>
+  <div id="root">
+    
+
+
+
+
+
+
+
+
+<script nonce="76t2raip2TNrdoSMQn5gcQ==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: ["Safe.js"],
+    });
+</script>
+<script type="text/javascript" nonce="76t2raip2TNrdoSMQn5gcQ==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    // Always use the production asset in local dev, which is served from GCS. We tried to proxy and / or serve this
+    // in a better way in localhost, but it didn't work out. See b/328073416#comment8 for details.
+    const forceProdHost = window.location.hostname === "localhost";
+    lib.src = `${forceProdHost ? "https://www.kaggle.com" : ""}/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>
